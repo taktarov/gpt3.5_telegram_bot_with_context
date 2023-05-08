@@ -10,7 +10,6 @@ Telegram Section
 '''
 bot_token = 'YOUR_TELEGRAM_BOT_TOKEN'
 bot_username= 'USERNAME WITHOUT @'
-chat_id = ''
 
 '''
 Chat setting
