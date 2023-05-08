@@ -1,0 +1,21 @@
+# deploying to https://fly.io
+brew install flyctl
+flyctl auth signup
+flyctl launch
+flyctl deploy
+
+# after first deploy downgrade instance count to 1 to avoid conflicts
+flyctl scale count 1
+
+# how to download something from the remote container
+flyctl ssh sftp shell -r -a travelradarbot
+get /travelradarbot/app.py
+
+# how to connect to the remote console
+flyctl ssh console -s travelradarbot
+
+# how to restart the app
+flyctl apps restart travelradarbot
+
+# to start the app
+flyctl scale count 1
