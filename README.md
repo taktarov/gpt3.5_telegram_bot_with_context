@@ -7,7 +7,7 @@ Chap GPT 3.5 Telegram Bot for group admins
 ## Deploying to https://fly.io
 - Install flyctl <code>brew install flyctl</code>
 - Sign Up <code>flyctl auth signup</code>
-= Launch app <code>flyctl launch</code>
+- Launch app <code>flyctl launch</code>
 - After first deploy downgrade instance count to 1 to avoid conflicts <code>flyctl scale count 1</code>
 - Feel free to chat with bot
 
